@@ -146,21 +146,6 @@ $(document).ready(function() {
         
     });
     
-    //ajax request to database
-    // $.ajax ({
-    //     type:'POST',
-    //     url: 'animals.php',
-    //     data: '',
-    //     dataType:"json",
-    //     success: function (data)
-    //     {
-    //         useReturnData(data);
-    //     }
-    // });
-    // function useReturnData(data){
-    //     animals = data;
-    //     console.log(animals);
-    //     $("#insertion").append(animals[0].name)
-    // }
+    
     
 });
