@@ -1,0 +1,99 @@
+html body {
+	margin:0px;
+	padding:0px;
+}
+
+.container-fluid {
+    padding:0;
+}
+
+#contentMain h1 {
+    text-align:center;
+    margin-top:60px;
+}
+
+    #topRow {
+        margin-top:50px;
+        text-align:center;
+    }
+
+    #topRow h1 {
+        font-size:300%;
+        color:white;
+    }
+
+    #topContainer {
+        background-image:url('../img/img.jpg');
+        width:100%;
+        background-size:cover;
+        background-position:center;
+    }
+    
+    .marginTop {
+        margin-top:30px;
+    }
+
+    .white {
+        color:white;
+    }
+
+    #hankPic {
+        background-image:url('../img/hank.jpg');
+        height:175px;
+        width:175px;
+        border-radius:100px;
+        border: 2px solid white;
+        background-size:cover;
+        background-position:center;
+        margin:0 auto;
+    }
+    .blogPost {
+        padding:0px;
+        margin-bottom:20px;
+        background-color:#e0e0e0;
+        border-radius:5px;
+    }
+
+    .blogList {
+        margin-top:30px;
+        border-bottom:1px solid grey;
+    }
+
+    .blogList img {
+        float:left;
+        border-radius:5px;
+    }
+
+    .blogPost h2, .blogpost p {
+        text-align:center;
+    }
+
+.col-sm-4 {
+    padding:0px;
+}
+
+.spanners {
+    margin-top:30px;
+}
+
+.spanners a {
+    margin-right:5px;
+}
+
+a {
+	color:black;
+}
+
+.footer {
+	background-color:#528ff2;
+	color:white;
+	text-align:center;
+}
+
+.postContent {
+    margin-bottom:50px;
+}
+
+.viewpostContent {
+    margin-top:20px;
+}

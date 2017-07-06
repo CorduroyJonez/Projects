@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jquery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- include custom styles -->
+    <link rel="stylesheet" href="css/unleashed.css">
+    
+    <script src="js/adopt.js"></script>
+    <script src="js/cart.js"></script>
+    
+</head>
+<body>
+    
+    <!-- Logo -->
+    <div id="unleashLogo" class="container-fluid">
+        <a href="unleashed.html"><img src="img/UnleashedLogo.png" class="img-fluid img_center"></a>
+    </div>
+    
+    <!--Nav Menu -->
+    <ul class="topnav" id="myTopnav">
+  
+      <li ><a href="http://www.unleashedrescue.com/adopt/">Adopt </a></li>
+      <li class="drop">
+          <a href="http://www.unleashedrescue.com/donate/" class="dropbtn">Donate</a>
+          <div class="drop-content">
+              <a href="http://www.unleashedrescue.com/monetary-donation/">Monetary Donation</a>
+              <a href="http://www.unleashedrescue.com/monthly-donor/ ">Monthly Donor Program</a>
+          </div>
+      </li>
+      <li ><a href="http://www.unleashedrescue.com/volunteer/ ">Volunteer</a></li>
+      <li ><a href="http://www.unleashedrescue.com/services/">Services</a></li>
+      <li class="drop">
+          <a href="http://www.unleashedrescue.com/aboutus/" class="dropbtn">About Us</a>
+          <div class="drop-content">
+              <a href="http://www.unleashedrescue.com/contact-us/">Contact Us</a>
+              <a href="http://www.unleashedrescue.com/forms/">Forms</a>
+          </div>
+      </li>
+      <li><a href="http://www.unleashedrescue.com/events/">Events</a></li>
+      <li class="icon">
+        <a href="javascript:void(0);" style="font-size:24px;padding-right:20px;" onclick="someFunction()">Menu ☰</a>
+      </li>
+    </ul>
+    
+    <!--area for cart navigation -->
+    <div id="cartSpace">
+		
+		<div id="cd-cart-trigger"><a class="cd-img-replace" href="#0">Cart</a></div>
+	</div>
+    
+    <div class='fluid container' style='text-align:center'>
+        <h1>Adopt At Unleashed</h1>
+    </div>
+    
+    <!-- Animal question form -->
+    <div id="selector" style="padding-left:47%;">
+        <form action="#">
+        <b>Are you interested in a dog or a cat?:</b><br>
+            <input id="species"  class = "dog" type="radio" name="species" value="dog"> Dog<br>
+            <input id="species"  class = "cat" type="radio" name="species" value="cat"> Cat<br>
+            <input id="species"  class = "all" type="radio" name="species" value="all"> Both<br>
+        <b>Male or Female?</b><br>
+            <input id="sex" class = "M" type="radio" name="sex" value="male"> Male<br>
+            <input id="sex" class = "F" type="radio" name="sex" value="female"> Female<br>
+            <input id="sex" class = "A" type="radio" name="sex" value="all"> Either<br><br>
+        </form>
+    </div>
+    
+    <!-- Area populated by animals matching choices -->
+    <div id="fill" class="fill container-fluid" style="text-align:center;margin-left:12.5%; margin-right:12.5%">
+        
+    </div>
+    
+    <!-- Cart Modal -->
+    <div id="cd-cart">
+		<h2 style="text-align:center; font-size:16px;">Cart</h2>
+		<ul class="cd-cart-items">
+			
+		</ul> <!-- cd-cart-items -->
+
+		<div class="cd-cart-total">
+
+		</div> <!-- cd-cart-total -->
+        <div id="checkoutLocation">
+		    <a href="checkout.html?Lily" class="checkout-btn">Checkout</a>
+		</div>
+		
+	</div>
+	
+	<!-- Footer -->
+    <div class='container-fluid theFooter'>
+      <div class='col-xs-12 col-md-3'>
+        <!-- sitemap -->
+        <h2 style="text-align: center;"><span style="color: #ffffff;">Site Map</span></h2>
+        <ul style="list-style-type: none;">
+         	<li style="text-align: center;"><strong><span style="color: #ffffff;"><a style="color: #ffffff;" href="http://www.unleashedrescue.com/aboutus/">About Us</a></span></strong></li>
+         	<li style="text-align: center;"><strong><span style="color: #ffffff;"><a style="color: #ffffff;" href="http://www.unleashedrescue.com/adopt/">Adopt</a></span></strong></li>
+         	<li style="text-align: center;"><strong><span style="color: #ffffff;"><a style="color: #ffffff;" href="http://www.unleashedrescue.com/donate/">Donate</a></span></strong></li>
+         	<li style="text-align: center;"><strong><span style="color: #ffffff;"><a style="color: #ffffff;" href="http://www.unleashedrescue.com/events/">Events</a></span></strong></li>
+         	<li style="text-align: center;"><strong><span style="color: #ffffff;"><a style="color: #ffffff;" href="http://www.unleashedrescue.com/services/">Services</a></span></strong></li>
+         	<li style="text-align: center;"><strong><span style="color: #ffffff;"><a style="color: #ffffff;" href="http://www.unleashedrescue.com/volunteer/">Volunteer</a></span></strong></li>
+        </ul>
+      </div>
+      <div class='col-xs-12 col-md-3'>
+        <!-- Business hours -->
+        <h2 style="text-align: center;"><span style="color: #ffffff;">Opening Hours</span></h2>
+        <ul style="list-style-type: none;">
+         	<li style="text-align: center;"><strong><span style="color: #ffffff;">Monday - Friday</span></strong></li>
+         	<li style="text-align: center;"><strong><span style="color: #ffffff;">10AM - 7PM</span></strong></li>
+         	<li style="text-align: center;"><strong><span style="color: #ffffff;">Saturday - Sunday</span></strong></li>
+         	<li style="text-align: center;"><strong><span style="color: #ffffff;">10AM - 5PM</span></strong></li>
+         </ul>
+      </div>
+      <div class='col-xs-12 col-md-3'>
+        <!-- Address -->
+        <h2 style="text-align: center;"><span style="color: #ffffff;">Address</span></h2>
+        <ul style="list-style-type: none;">
+         	<li style="text-align: center;"><strong><span style="color: #ffffff;">5918 Broadmoor</span></strong></li>
+         	<li style="text-align: center;"><strong><span style="color: #ffffff;">Mission, KS 66202</span></strong></li>
+         	<li style="text-align: center;"><strong><span style="color: #ffffff;">unleashedrescue@gmail.com</span></strong></li>
+         	<li style="text-align: center;"><strong><span style="color: #ffffff;">Phone: (913) 831-PETS</span></strong></li>
+         </ul>
+      </div>
+      <div class='col-xs-12 col-md-3'>
+        <!-- google map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3099.7246756072764!2d-94.66807968545642!3d39.02159364722045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0edb562c77721%3A0xc790f6755bf8189f!2sUnleashed+Pet+Rescue!5e0!3m2!1sen!2sus!4v1482772551291" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      
+    </div>
+</body>
+</html>

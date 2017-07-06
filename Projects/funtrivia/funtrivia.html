@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- jquery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <!-- include custom styles -->
+    <link rel="stylesheet" href="css/funtrivia.css">
+    <!--custom javascript -->
+    <script src="js/funtrivia.js"></script>
+    
+</head>
+<body>
+    <div class="intro" class="col-xs-12">
+            <h1 style="text-align:center">Funtrivia!</h1></h1>
+            <p class="intro" style="text-align:center">Let's see how you do against these 10 random questions. Just input your answer into the text-field below.</p>
+            <p class="intro" style="text-align:center">Use the calculator if you need more assistance.</p>
+    </div>
+    <div class="col-xs-12 col-md-5" >
+        <div id="button-div">
+            <form name="calculator">
+                <input id="display" type="text" name="answer"/>
+                <br>
+                
+                <input class="btn" type="button" value="7" onclick="calculator.answer.value += '7'"/>
+                <input class="btn" type="button" value="8" onclick="calculator.answer.value += '8'"/>
+                <input class="btn" type="button" value="9" onclick="calculator.answer.value += '9'"/>
+                <input id="clear" class="btn" type="button" value="C" onclick="calculator.answer.value = ''"/>
+                <br>
+                
+                <input class="btn" type="button" value="4" onclick="calculator.answer.value += '4'"/>
+                <input class="btn" type="button" value="5" onclick="calculator.answer.value += '5'"/>
+                <input class="btn" type="button" value="6" onclick="calculator.answer.value += '6'"/>
+                <input class="btn" type="button" value="x" onclick="calculator.answer.value += '*'"/>
+                <input class="btn" type="button" value="/" onclick="calculator.answer.value += '/'"/>
+                <br>
+                
+                <input class="btn" type="button" value="1" onclick="calculator.answer.value += '1'"/>
+                <input class="btn" type="button" value="2" onclick="calculator.answer.value += '2'"/>
+                <input class="btn" type="button" value="3" onclick="calculator.answer.value += '3'"/>
+                <input class="btn" type="button" value="+" onclick="calculator.answer.value += '+'"/>
+                <input class="btn" type="button" value="-" onclick="calculator.answer.value += '-'"/>
+                
+                <input class="btn" type="button" value="0" onclick="calculator.answer.value += '0'"/>
+                <input class="btn" type="button" value="." onclick="calculator.answer.value += '.'"/>
+                <input class="btn" type="button" value="%" onclick="calculator.answer.value += '%'"/>
+                <input id="equals" class="btn" type="button" value="=" onclick="calculator.answer.value = eval(calculator.answer.value)"/>
+                
+            </form>
+           
+        </div>
+    </div>
+    
+    <div id="questInput" class="col-xs-12 col-md-7">
+         
+        <div class="questionCount"> 1/10</div>
+        <div id="triviaArea"></div>
+        <div id="answerArea">
+                <input id="userAnswer" type="text" id="questAnser"/><br>
+                <button class="submittal btn-primary">Submit</button>
+                <button class="nextOne btn-primary">Next -></button>
+        </div>
+        <div id="feedbackArea"></div>
+        <div id="tryAgain"></div>
+    </div>
+    
+</body>
